@@ -85,7 +85,7 @@ nav li a:hover {
     background-color: rgb(78, 78, 78);
     color: rgb(0, 225, 255);
     box-shadow: 0 0 5px rgba(53, 53, 53, 0.685);
-    border-radius: 5px;
+    border-radius: 10px;
   }
 
 nav:hover {
