@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 /*font-family: 'Comfortaa', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+/*
+font-family: 'UnifrakturMaguntia', cursive;
+*/
 
 body {
     font-family: 'Comfortaa', cursive;
@@ -14,7 +18,7 @@ header {
     align-content: center;
     position: relative;
     z-index: -5;
-    padding: 15% 0 20% 0;
+    padding: 10% 0 15% 0;
     margin: 0;
 
     background-image: url("/photos/aastr-moon-shat.jpg");
@@ -24,7 +28,8 @@ header {
     box-shadow: 0 5px 10px -4px rgba(0, 0, 0, 0.856);
 
     color: rgb(255, 255, 255);
-    font-size: 250%;
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 450%;
     font-weight: bolder;
     text-shadow: 1px 1px 1em rgb(0, 0, 0), -1px -1px 1em black;/*blur all ower*/
     width: 100%;
@@ -46,13 +51,45 @@ nav {
     right: 12%;
     left: 12%;
     height: 10px;
+    display: flex;
+    justify-content: center;
 
     transition: height 1s;
 
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    
+    overflow: hidden;
+    
+    
+}
+  
+nav li {
+    float: left;
+    padding: 10px;
+  }
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+nav li a:hover {
+    background-color: rgb(78, 78, 78);
+    color: rgb(0, 225, 255);
+    box-shadow: 0 0 5px rgba(53, 53, 53, 0.685);
+    border-radius: 5px;
+  }
+
 nav:hover {
-    height: 50px;
+    height: 60px;
     
 }
 
@@ -82,4 +119,6 @@ section { /*Section sadrži tekstualni sadržaj*/
 
 .pozadinskaSlika { /*dekorativni div, pozadinska slika, fixed effect --> izgleda kao da se scroll-a u suprotnome smjeru*/
 }
+
+
 
