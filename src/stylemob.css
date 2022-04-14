@@ -4,6 +4,8 @@
 body {
     margin: 0%;
     background-color: #1C1C1C;
+    font-family: 'Comfortaa', cursive;
+    color: #FFFFFF;
 }
 
 header {
@@ -99,7 +101,7 @@ height: 187px;
 font-family: 'Comfortaa';
 font-style: normal;
 font-weight: 700;
-font-size: 60px;
+font-size: 50px;
 line-height: 67px;
 display: flex;
 align-items: center;
@@ -110,3 +112,29 @@ color: #FFFFFF;
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.tehnologije {
+
+}
+/*
+nešto nisam dobro spojio i nije mi jasno što
+trebam li uopće spomenuti svaki parent prije ili mogu samo glavni parent koji mi treba i odmah na element kojeg želim (pr. .tehnologije a {} )
+*/
+.tehnologije article div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.tehnologije article div a figure {
+    width: 100px;
+    height: 100px;
+   
+}
+
+/*
+ovaj ne radi kako bi htio --> a:hover 
+*/
+
+.tehnologije article div a:hover {
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.77);
+}
