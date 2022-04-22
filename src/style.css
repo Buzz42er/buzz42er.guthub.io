@@ -102,6 +102,10 @@ nav:hover {
     
 }
 
+nav li a .m {
+    display: none;
+}
+
                                                     /*NAV ** end*/
 
             /*standardni sadržaj - atributi koje će imati svaki testovni sadržaj ** start */
@@ -179,5 +183,189 @@ footer {
     width: 100%;
 }
 
+@media screen and (max-width: 500px){
 
+    body {
+        margin: 0;
+        background-color: #1C1C1C;
+        font-family: 'Comfortaa', cursive;
+        color: #FFFFFF;
+    }
+    
+        header {
+            /* aastr-moon-shat 1 */
+            width: 100%;
+        height: 750px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        
+        background: url(/photos/aastr-moon-shat.jpg);
+        background-size: cover;
+        background-position: 50% 16%;
+        background-attachment: fixed;
+        box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.77);
+        
+        }
+        
+        header h1 {
+            /* Jure Ereš */
+            height: 147px;
+        
+            margin: 0;
+            font-family: 'Comfortaa';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 70px;
+            line-height: 89px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            
+            color: #FFFFFF;
+            
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.55);
+    
+        }
+        
+        nav {
+            /* Group 8 */
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            left: 0;
+            right: 0;
+            padding: 0;
+            background: #313131;
+            box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.77);
+            transition: none;
+        
+        }
+        
+        
+        nav a {
+            /* Ellipse 8 */
+            margin: 3px 2%;
+            width: 55px;
+            height: 55px;
+            display: flex;
+            justify-content: center;
+            
+            
+            border-radius: 100%;
+            
+            background: #1C1C1C;
+        
+        }
+        
+        nav a:hover {
+            box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.77);
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            
+            
+        }
+          
+        nav li {
+            float: left;
+            padding: 0 10px;
+          }
+          
+        nav li a {
+            display: flex;
+            color: white;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0px;
+            text-decoration: none;
+          }
+        
+        nav li a .m {
+            display: inline;
+            
+        }
+
+        nav li a .d {
+            display: none;
+            
+        }
+        
+        .naslovi {
+        
+            /*podnaslovi*/
+        height: 187px;
+        
+        font-family: 'Comfortaa';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 67px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        
+        color: #FFFFFF;
+        
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        
+        article {
+            width: 100%;
+            display: block;
+            background-color: transparent;
+        }
+
+        section {
+            height: auto;
+        }
+
+        .pozadinskaSlika { /*dekorativni div, pozadinska slika, fixed effect --> izgleda kao da se scroll-a u suprotnome smjeru*/
+            background-image: url("/photos/astronautonthemoon.jpg");
+            background-size: cover;
+            
+            height: 50px;
+            box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.801);
+            background-attachment: fixed;
+        }
+        
+        .razdjelnik { /*dekorativni div*/
+            
+        }
+        
+
+        #tehnologije {
+        
+        }
+        /*
+        nešto nisam dobro spojio i nije mi jasno što
+        trebam li uopće spomenuti svaki parent prije ili mogu samo glavni parent koji mi treba i odmah na element kojeg želim (pr. .tehnologije a {} )
+        */
+        #tehnologije article div {
+        
+        }
+        
+        #tehnologije article div a figure, #tehnologije article div a figure img  {
+            
+            
+           
+        }
+        
+        /*
+        ovaj ne radi kako bi htio --> a:hover 
+        */
+        
+        #tehnologije article div figure:hover {
+            box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.77);
+        }
+
+    }
 
