@@ -297,10 +297,10 @@ footer span {
             position: fixed;
             bottom: 0px;
             width: 100%;
-            height: 60px;
+            height: 10%;
             display: flex;
             justify-content: center;
-            align-content: center;
+            align-items: center;
             left: 0;
             right: 0;
             padding: 0;
