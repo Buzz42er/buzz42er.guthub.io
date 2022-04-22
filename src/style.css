@@ -34,6 +34,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     box-shadow: inset 0 -5px 10px -4px rgba(0, 0, 0, 0.856);
 
     color: rgb(255, 255, 255);
@@ -62,15 +63,14 @@ nav {
     height: 10px;
     display: flex;
     justify-content: center;
-
+    
     transition: height 1s;
 
 }
 
-nav ul {
+nav .navi {
     list-style-type: none;
     margin: 0;
-    
     overflow: hidden;
     
     
@@ -122,6 +122,30 @@ div { /*prostor za sadržaj - sadrži article element*/
 
 }
 
+.naslovi {
+        
+    /*podnaslovi*/
+height: 187px;
+width: 20px;
+text-transform: capitalize;
+font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 700;
+font-size: 2em;
+line-height: 67px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nasloviMOB {
+    display: none;
+}
+
 article { /*sadrži section element i naslove*/
     background-color: rgb(49, 49, 49);
     display: flex;
@@ -133,7 +157,7 @@ article { /*sadrži section element i naslove*/
     height: 700px;
 }
 
-section { /*Section sadrži tekstualni sadržaj*/
+section , address { /*Section sadrži tekstualni sadržaj*/
     /*background-color: #292929;*/
     background-color: transparent;
     border: 3px dashed rgb(20, 20, 20);
@@ -177,10 +201,46 @@ section { /*Section sadrži tekstualni sadržaj*/
 }
 
 footer {
-    height: 200px;
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    
+    padding: 20px 0;
+
+    color: #313131;
     background-color: #0c0c0c;
     box-shadow: inset 10px 10px 7px -5px rgba(0, 0, 0, 0.664);
     width: 100%;
+    
+}
+
+footer section , address {
+    border: none;
+    width: auto;
+    height: auto;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    box-shadow:  0 0 10px 5px rgba(0, 0, 0, 0.801);
+    padding: 5px;
+}
+
+footer li {
+    list-style-type: none;
+    
+    margin: 5px 15px;
+    
+    
+}
+
+
+footer span {
+    margin: 8px 0px;
 }
 
 @media screen and (max-width: 500px){
@@ -242,8 +302,18 @@ footer {
             padding: 0;
             background: #313131;
             box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.77);
+            border-radius: 0;
             transition: none;
         
+        }
+        nav:hover {
+            height: 60px;
+            
+            
+        }
+
+        .mobnav {
+            display: none;
         }
         
         
@@ -262,8 +332,11 @@ footer {
         
         }
         
-        nav a:hover {
-            box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.77);
+
+
+        nav li a:hover {
+            box-shadow: 0 0 5px rgba(29, 29, 29, 0.685);
+            border-radius: 100%;
         }
         
         nav ul {
@@ -300,19 +373,22 @@ footer {
         }
         
         .naslovi {
+            display: none;
+        }
+
+        .nasloviMOB {
         
             /*podnaslovi*/
-        height: 187px;
         
         font-family: 'Comfortaa';
         font-style: normal;
         font-weight: 700;
-        font-size: 50px;
-        line-height: 67px;
+        font-size: 45px;
+        
         display: flex;
         align-items: center;
         text-align: center;
-        
+        justify-content: center;
         color: #FFFFFF;
         
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -336,36 +412,13 @@ footer {
             box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.801);
             background-attachment: fixed;
         }
-        
-        .razdjelnik { /*dekorativni div*/
-            
-        }
-        
 
-        #tehnologije {
-        
-        }
-        /*
-        nešto nisam dobro spojio i nije mi jasno što
-        trebam li uopće spomenuti svaki parent prije ili mogu samo glavni parent koji mi treba i odmah na element kojeg želim (pr. .tehnologije a {} )
-        */
-        #tehnologije article div {
-        
-        }
-        
-        #tehnologije article div a figure, #tehnologije article div a figure img  {
+        footer {
+            padding-bottom: 60px;
+            flex-direction: column;
             
             
-           
         }
-        
-        /*
-        ovaj ne radi kako bi htio --> a:hover 
-        */
-        
-        #tehnologije article div figure:hover {
-            box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.77);
-        }
+
 
     }
-
