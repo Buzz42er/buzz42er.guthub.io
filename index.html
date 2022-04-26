@@ -15,6 +15,7 @@
 
     <header>
         <h1>Jure Eres</h1>
+        
     </header>
 
     <!--navigacija stranice-->
@@ -32,8 +33,7 @@
         <article>
             <h2 class="naslovi">O<br><br>M E N I</h2>
             <h2 class="nasloviMOB">O MENI</h2>
-            <section></section>
-            <section></section>
+            <img class="o-meni-img"  src="/slikeTehnologije/Omeni.png" alt="">
         </article>
     </div>
 
@@ -64,8 +64,31 @@
         <article>
             <h2 class="naslovi">K O N T A K T</h2>
             <h2 class="nasloviMOB">KONTAKT</h2>
-            <section></section>
-            <section></section>
+            <section class="kontakt-form">
+                <form action="mailto:jure.eres42@gmail.com" method="post" enctype=”multipart/form-data” name=”EmailForm”>
+                    <label for="naziv">Kompanija/Poduzeće</label> <br>
+                    <input type="text" name="naziv" id="naziv" placeholder="Naziv zainteresirane stranke">
+                    <br>
+                    <label for="mail">E-mail</label> <br>
+                    <input type="email" name="mail" id="mail" placeholder="abc@primjer.com">
+                    <br>
+                    <label for="poruka">Poruka / Zamolba / Upit</label>
+                    <textarea name="poruka" id="poruka" cols="30" rows="10" placeholder="Pišite mi :)"></textarea>
+                    <br>
+                    <input type="submit" value="Pošalji">
+                </form>
+            </section>
+            <section class="kontakt-link">
+                <h3>Kontakt Linkovi</h3>
+                <ul>
+                    <li><a href="">GitHub</a></li>
+                    <li><a href="">LinkedIn</a></li>
+                    <li><a href="">SoloLearn</a></li>
+                    <li><a href="">Email</a></li>
+                    <li><a href="">Telefon</a></li>
+                    <li><a href="">Portfolio</a></li>
+                </ul>
+            </section>
         </article>
     </div>
 
