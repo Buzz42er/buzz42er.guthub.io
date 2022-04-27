@@ -55,12 +55,12 @@ nav {
     background-color: rgb(49, 49, 49);
     box-shadow: 0px -8px 15px -7px #000000;
     border-radius: 1px 1px 0 0;
-    width: 75%;
+    width: 65%;
     padding: 10px 0 10px 0;
     position: fixed;
     bottom: 0px;
-    right: 12%;
-    left: 12%;
+    right: 17%;
+    left: 17%;
     height: 10px;
     display: flex;
     justify-content: center;
@@ -203,12 +203,43 @@ address {
 
 }
 
-.o-meni-img {
+.img {
+    background-image: url("/slikeTehnologije/Omeni.png");
     width: 65%;
-    
-    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: block;
 }
 
+.mob-o-meni {
+    display: none;
+}
+
+/*
+.vjestine-m {
+    position: absolute;
+    left: 615px;
+    font-size: 38px;
+    top: 760px;
+}
+
+.obrazovanje-m {
+    position: absolute;
+    left: 935px;
+    font-size: 29px;
+    top: 975px;
+}
+
+.img .iskustvo-m {
+    position: absolute;
+    left: 461px;
+    font-size: 25px;
+    top: 1090px;
+
+}
+*/
 .clanak {
     display: block;
     height: 225px;
@@ -275,6 +306,40 @@ footer span {
     margin: 8px 0px;
 }
 
+@media screen and (max-width: 1250px){
+    
+    nav li {
+        
+        padding: 0 20px;
+    }
+
+    .img {
+        display: none;
+    }
+    .mob-o-meni {
+        display: initial;
+        display: flex;
+        width: 30%;
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+
+    #o-meni {
+        height: auto;
+    }
+
+    #o-meni article {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+
+}
+
 @media screen and (max-width: 915px) and (max-height:1368px) {
 
     body {
@@ -337,7 +402,7 @@ footer span {
     }
 
     nav:hover {
-        height: inherit;
+        height: auto;
     }
 
     .desknav {
@@ -437,14 +502,14 @@ footer span {
     #o-meni article {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
     }
 
-    .o-meni-img {
-        width: 65%;
-        margin-bottom: 30px;
-
-
-        
+    .mob-o-meni {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     .clanak {
@@ -482,4 +547,17 @@ footer span {
     }
 
 
+}
+
+@media screen and (max-width: 280px){
+    nav {
+       height: 135px;       
+    }
+
+    .navi {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
