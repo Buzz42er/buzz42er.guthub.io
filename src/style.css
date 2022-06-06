@@ -117,8 +117,31 @@ div {
     justify-content: center;
     align-items: center;
 
-
 }
+
+#projekti, #projects {
+    height: 800px;
+}
+
+#project {
+    height: 650px;
+}
+
+#project h3 {
+    display: flex;
+    justify-content: center;
+}
+
+#project ul {
+    list-style-type: none;
+}
+
+.projectImg {
+    border-radius: 1px;
+    box-shadow: 0 0 10px 5px rgba(29, 29, 29, 0.685);
+    margin-top: 20px;
+}
+
 
 .naslovi {
 
@@ -156,8 +179,7 @@ article {
     height: 700px;
 }
 
-section,
-address {
+section{
     /*Section sadrži tekstualni sadržaj*/
     /*background-color: #292929;*/
     background-color: transparent;
@@ -165,11 +187,25 @@ address {
     border-radius: 1px;
     width: 400px;
     height: 450px;
+    margin: 15px;
+}
+
+
+address {  
+    background-color: transparent;
+    width: 400px;
+    height: 450px;
     margin: 30px;
 
 }
 
 /*standardni sadržaj ** end */
+
+.projectLi {
+    display: initial;
+    height: initial;
+
+}
 
 .razdjelnik {
     /*dekorativni div*/
@@ -213,6 +249,19 @@ address {
     display: block;
 }
 
+/*Links*/
+a {
+    color: rgb(0, 168, 190);
+}
+
+a:hover {
+    color: rgb(0, 225, 255);
+}
+
+a:active {
+    color: white;
+}
+
 .mob-o-meni {
     display: none;
 }
@@ -229,31 +278,31 @@ address {
 
 /*link za h3 unutar mob-o-meni*/
 .mob-o-meni h3 a {
+    color: white;
     text-decoration: none;
-    color: #FFFFFF;
+    
 }
 
 .mob-o-meni h3 a:before {
-    color: #62aae4;
+    color: white;  
 }
 
 .mob-o-meni h3 a:hover {
-    color: #90c0e7;
+    color: rgb(0, 225, 255);
     
 }
 
 .mob-o-meni h3 a:active {
-    color: #FFFFFF;
     font-size: 1.5em;
 }
 
 .mob-o-meni h3 a:after {
-    color: #FFFFFF;
+    color: white;
 }
 
 /*link za li unutar mob-o-meni*/
 .mob-o-meni li a {
-    color: white;
+
 }
 
 .mob-o-meni li a::before {
@@ -261,7 +310,6 @@ address {
 }
 
 .mob-o-meni li a:hover {
-    color: #a0cdf1;
     text-decoration: none;
 }
 

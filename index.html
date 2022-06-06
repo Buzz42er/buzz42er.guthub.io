@@ -15,16 +15,16 @@
     
     <header>
         <h1>Jure Eres</h1>
-        
+        <a href="./stranice/HireMe.html">H</a> <!--does not work for now, needs to be a correct way, don't know it jet-->
     </header>
 
     <!--navigacija stranice-->
     <nav>
         <span class="navi">
-            <li><a href="#"><span class="d">Home</span><span class="m"><H2></H2></span></a></li>
+            <li><a href="#"><span class="d">Home</span><span class="m">H</span></a></li>
             <li><a href="#o-meni"><span class="d">About me</span><span class="m">Me</span></a></li>
             <li><a href="#projekti"><span class="d">Projects</span><span class="m">Proj</span></a></li>
-            <li><a href="#kontakt"><span class="d">Contact</span><span class="m">Cont</span></a></li>
+            <li><a href="#kontakt"><span class="d">Contact</span><span class="m">Con</span></a></li>
         </span>
     </nav>
 
@@ -34,19 +34,19 @@
             <h2 class="naslovi">A B O U T<br><br>M E</h2>
             <h2 class="nasloviMOB">ABOUT</h2>
             <div class="mob-o-meni">
-                <h3><a href="./stranice/skills.html">Skills</a></h3>
+                <h3><a href="./stranice/AboutMe/skills.html">Skills</a></h3>
                 <ul>
                     <li><a href="">React</a></li>
                     <li><a href="">CSS</a></li>
                     <li><a href="">More...</a></li>
                 </ul>
-                <h3><a href="./stranice/education.html">Education</a></h3>
+                <h3><a href="./stranice/AboutMe/education.html">Education</a></h3>
                 <ul>
                     <li><a href="">Algebra</a></li>
                     <li><a href="">sololearn</a></li>
                     <li><a href="">More...</a></li>
                 </ul>
-                <h3><a href="./stranice/experiance.html">Experiance</a></h3>
+                <h3><a href="./stranice/AboutMe/experiance.html">Experiance</a></h3>
                 <ul>
                     <li><a href="">A1</a></li>
                     <li><a href="">Hangar 18</a></li>
@@ -71,10 +71,31 @@
 
     <!--prostor za sadržaj-->
     <div id="projekti">
-        <article>
+        <article id="projects">
             <h2 class="nasloviMOB">PROJECTS</h2>
-            <section></section>
-            <section></section>
+            <section id="project">
+                <h3>Basics</h3>
+                <ul>
+                    <a href=""><img class="projectImg" src="./slike-projekata/Snimka zaslona (7).png" alt="" width="280" height="150"></a>
+                    <li><a href="">Core Tools</a></li> <!--HTML, CSS, JS-->
+                    <a href=""><img class="projectImg" src="./slike-projekata/Snimka zaslona (11).png" alt="" width="280" height="150"></a>
+                    <li><a href="">Design</a></li> <!--Figma, Canva-->
+                    <a href=""><img class="projectImg" src="./slike-projekata/Snimka zaslona (8).png" alt="" width="280" height="150"></a>
+                    <li><a href="">Support</a></li> <!--git, github, node, json-server-->
+
+                </ul>
+            </section>
+            <section id="project">
+                <h3>Libreries / Frameworks</h3>
+                <ul>
+                    <a href=""><img class="projectImg" src="./slike-projekata/Snimka zaslona (15).png" alt="" width="280" height="150"></a>
+                    <li><a href=""><div class="projectLi">React</div></a></li>
+                    <a href=""><img class="projectImg" src="./slike-projekata/Snimka zaslona (15).png" alt="" width="280" height="150"></a>
+                    <li><a href=""><div class="projectLi">Angular</div></a></li>
+                    <a href=""><img class="projectImg" src="./slike-projekata/Snimka zaslona (15).png" alt="" width="280" height="150"></a>
+                    <li><a href=""><div class="projectLi">jQuery and Ruby</div></a></li>
+                </ul>
+            </section>
             <h2 class="naslovi">P R O J E C T S</h2>
         </article>
     </div>
