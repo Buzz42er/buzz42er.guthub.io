@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,35 +9,71 @@
     <link rel="stylesheet" href="../src/style.css">
     <script src="../src/script.js"></script>
 </head>
+
 <body>
     <div class="subHeader">
         <h1>Projects</h1>
     </div>
-
-        <!--kraj stranice-->
-        <footer>
-            <address>
-                <h3 id="kontakt">Contact</h3>
-                <span>
-                    <li><a href="mailto:jure.eres42@gmail.com?subject=Upit sa stranice" target="mail">E-mail</a></li>
-                    <li><a href="tel:+385915735157">Phone</a></li>
-                    <li><a href="https://github.com/Buzz42er" target="_blank">GitHub</a></li>
-                    <li><a href="https://www.sololearn.com/profile/12213856">SoloLearn</a></li>
-                    <li><a href="https://www.linkedin.com/in/jure-ere%C5%A1-b4a33a167/" target="_blank">LinkedIn</a></li>
-                </span>
-            </address>
-            <article>
-                <h3>Shortcuts</h3>
-                <span>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#obrazovanje">Education</a></li>
-                    <li><a href="#projekti">Projects</a></li>
-                </span>
+    <div>
+        <section id="skills">
+            <h2>R E A C T</h2>
+            <article class="subProject">
+                <h3>Task Tracker</h3>
+                <iframe src="https://buzz42er.github.io/react-task-tracker/" frameborder="0"></iframe>
             </article>
-    
-    
-            <span>Copyright&copy;2022 Jure Ereš</span>
-    
-        </footer>
+        </section>
+    </div>
+        <div>
+        <section>
+            <h2>R E A C T</h2>
+            <article class="subProject">
+                <h3>About Task tracker</h3>
+                <p>The main goal for this app was to learn how React works, and I did that by: <br>
+                    - creating input from <br>
+                    - collecting data into json server <br>
+                    - assign said data to variables <br>
+                    - output in compact and user readable way <br>
+
+                    Couple of problem I stumbled upon:
+                        - there was no big problem with the build(couple of smaller ones with sintax and forgoting to put parenthesis when needed) <br>
+                        - but, there was a couple when I started with git pages: <br>
+                                - first there was a problem with installing all the necessary software to execute git pages protocol <br>
+                                    - the solution was to go into package.json add couple of aditional commands and try to call function again, after finding what information program needs to properly run I was faced with another problem <br>
+                                - git was missing a path, or didn't have a correct one <br>
+                                    - for that I found path in my sistem settings, wrote down, path for bin and cmd, for git, and added path for bin onto same existing path. Reloaded everything and tryed again, this time I found out that there was vsc setting that I need to ajust also, but after I did that, and wrote path in .json file everything worked and I could use git again from terminal <br>
+                                - when the app was live, another problem appeared, app was loading on with only about link, and although there was still a way to get to main event, when reloaded site would crash, because link was not correct any more <br>
+                                    -
+                </p>
+                
+
+            </article>
+        </section>
+    </div>
+    <!--kraj stranice-->
+    <footer>
+        <address>
+            <h3 id="kontakt">Contact</h3>
+            <span>
+                <li><a href="mailto:jure.eres42@gmail.com?subject=Upit sa stranice" target="mail">E-mail</a></li>
+                <li><a href="tel:+385915735157">Phone</a></li>
+                <li><a href="https://github.com/Buzz42er" target="_blank">GitHub</a></li>
+                <li><a href="https://www.sololearn.com/profile/12213856">SoloLearn</a></li>
+                <li><a href="https://www.linkedin.com/in/jure-ere%C5%A1-b4a33a167/" target="_blank">LinkedIn</a></li>
+            </span>
+        </address>
+        <article>
+            <h3>Shortcuts</h3>
+            <span>
+                <li><a href="#">Home</a></li>
+                <li><a href="#obrazovanje">Education</a></li>
+                <li><a href="#projekti">Projects</a></li>
+            </span>
+        </article>
+
+
+        <span>Copyright&copy;2022 Jure Ereš</span>
+
+    </footer>
 </body>
+
 </html>
