@@ -11,44 +11,170 @@
 </head>
 
 <body>
+
     <div class="subHeader">
         <h1>Projects</h1>
     </div>
-    <div>
-        <section id="skills">
+    
+    <div class="container">
+        <section  id="skills">
             <h2>R E A C T</h2>
             <article class="subProject">
                 <h3>Task Tracker</h3>
                 <iframe src="https://buzz42er.github.io/react-task-tracker/" frameborder="0"></iframe>
             </article>
+            
         </section>
     </div>
-        <div>
-        <section>
-            <h2>R E A C T</h2>
-            <article class="subProject">
-                <h3>About Task tracker</h3>
+    
+    <div class="heightVar container">
+        <section class="heightVar">
+            
+            <article class="subProject blockProject">
+                <h3>About Task Tracker</h3>
+                <p>GitHub link: <a href="https://github.com/Buzz42er/react-task-tracker">Task Tracker</a></p>
                 <p>The main goal for this app was to learn how React works, and I did that by: <br>
-                    - creating input from <br>
-                    - collecting data into json server <br>
-                    - assign said data to variables <br>
-                    - output in compact and user readable way <br>
-
-                    Couple of problem I stumbled upon:
-                        - there was no big problem with the build(couple of smaller ones with sintax and forgoting to put parenthesis when needed) <br>
-                        - but, there was a couple when I started with git pages: <br>
-                                - first there was a problem with installing all the necessary software to execute git pages protocol <br>
-                                    - the solution was to go into package.json add couple of aditional commands and try to call function again, after finding what information program needs to properly run I was faced with another problem <br>
-                                - git was missing a path, or didn't have a correct one <br>
-                                    - for that I found path in my sistem settings, wrote down, path for bin and cmd, for git, and added path for bin onto same existing path. Reloaded everything and tryed again, this time I found out that there was vsc setting that I need to ajust also, but after I did that, and wrote path in .json file everything worked and I could use git again from terminal <br>
-                                - when the app was live, another problem appeared, app was loading on with only about link, and although there was still a way to get to main event, when reloaded site would crash, because link was not correct any more <br>
-                                    -
+                    <span>- creating input from </span><br>
+                    <span>- collecting data into json server </span><br>
+                    <span>- assign said data to variables </span><br>
+                    <span>- output in compact and user readable way </span><br><br>
+                    <b class="subTitle">Couple of problem I stumbled upon:</b> <br>
+                    <span>- there was no big problem with the build(couple of smaller ones with sintax and forgoting to
+                        put parenthesis when needed) </span><br>
+                    <span>- but, there was a couple when I started with git pages: </span><br><br>
+                <p class="question">* first there was a problem with installing all the necessary software to execute
+                    git pages protocol </p><br>
+                <p class="answer">- the solution was to go into package.json add couple of aditional commands and try to
+                    call function again, after finding what information program needs to properly run I was faced with
+                    another problem </p><br><br>
+                <p class="question">* git was missing a path, or didn't have a correct one </p><br>
+                <p class="answer">- for that I found path in my sistem settings, wrote down, path for bin and cmd, for
+                    git, and added path for bin onto same existing path. Reloaded everything and tryed again, this time
+                    I found out that there was vsc setting that I need to ajust also, but after I did that, and wrote
+                    path in .json file everything worked and I could use git again from terminal </p><br><br>
+                <p class="question">* when the app was live, another problem appeared, app was loading on with only
+                    about link, and although there was still a way to get to main event, when reloaded site would crash,
+                    because link was not correct any more </p><br>
+                <p class="answer">-</p>
                 </p>
-                
-
             </article>
         </section>
     </div>
+    
+    <div class="container">
+        <section id="skills">
+            <h2>C O R E <br><br> T O O L S</h2>
+            <article class="subProject">
+                <h3>Calculator</h3>
+                <iframe src="https://buzz42er.github.io/calculator/" frameborder="0"></iframe>
+            </article>
+            
+        </section>
+    </div>
+    
+    <div class="heightVar container">
+        <section class="heightVar">
+            
+            <article class="subProject blockProject">
+                <h3>About Calculator</h3>
+                <p>GitHub link: <a href="https://github.com/Buzz42er/calculator">Calculator</a></p>
+                <p>The main goal for this app was to learn how JS works, how to manipulate DOM, and I did that by: <br>
+                    <span>- creating input "table" </span><br>
+                    <span>- then collected data with div on the top of the app </span><br>
+                    <span>- when inside the div(it was already assign to a variable) i can manipulate the data
+                    </span><br>
+                    <span>- output div was just under collector div, so you can practicly instantly see whats the output
+                        data</span><br>
+                    <span>- the insparation was google calculator app</span><br><br>
+
+                    <b class="subTitle">Couple of challenges I stumbled upon:</b> <br>
+                    <span>- first challenge I had was to create HTML file that has as much data all ready in it, so that
+                        js can be simple and compact </span><br>
+                    <span>- secound thing was that I didn't wanna complocate it to much </span><br>
+                    <span>- css and html was quite esay, they were done in 15 min, then in JS created function that
+                        would catch what ever is in that div and added it 9 + "+" + 9 for example and to output it to
+                        'text' div</span><br>
+                    <span>- and after getting all paramentars on the paper, work started: </span><br><br>
+                <p class="question">* first challenge was to clear only last character in div text</p><br>
+                <p class="answer">- so I grabed innerHTML of 'text' and got it into a del var, then called it again and
+                    same innerHTML of 'text' and fecht substring of del to subtract one from the lenght of the whole
+                    string, for delete all i just replicated what worked earlier with delete last char </p><br><br>
+                <p class="question">* for equal, the only hurdle was conenting text and output so that the result would
+                    be shown at the output div</p><br>
+                <p class="answer">- so, if not empty get output, and write that output on div output, that was for the
+                    most part it</p><br><br>
+            </article>
+        </section>
+    </div>
+
+    <div class="container">
+        <section id="skills">
+            <article class="subProject">
+                <h3>FormWithJS</h3>
+                <iframe src="https://buzz42er.github.io/FormWithJS/" frameborder="0"></iframe>
+            </article>
+            
+        </section>
+    </div>
+    
+    <div class="heightVar container">
+        <section class="heightVar">
+            
+            <article class="subProject blockProject">
+                <h3>About FormWithJS</h3>
+                <p>GitHub link: <a href="https://github.com/Buzz42er/FormWithJS">Ad User From</a></p>
+                <p>The main goal for this app was to learn how JS works, how to manipulate DOM in another way, and I did that by: <br>
+                    <span>- creating input by text, and submit button </span><br>
+                    <span>- then collected data in multiple variables </span><br>
+                    <span>- creating some error messages, and displaying end result under form, as an li</span> <br><br>
+                    <b class="subTitle">There were no challenges because I did this as an practice, by studying trough course. But my future plan is:</b> <br>
+                    <span>- to add a server onto this </span><br>
+                    <span>- get every user it's own page, that's created when user creats his account by submitting </span><br>
+                    <span>- enter on that account page when he/she clicks on Submit </span><br>
+                    <span>- check if email is written correctly and so on </span><br>
+                </p>
+            </article>
+        </section>
+    </div>
+
+    <div class="container heightVar">
+        <section class="heightVar">
+            <h2>S U P P O R T</h2>
+            <article class="subProject">
+                <h3>React with GitHub pages</h3>
+                <iframe src="https://buzz42er.github.io/react-gh-pages/" frameborder="0"></iframe>
+            </article>
+        </section>
+    </div>
+
+    <div class="heightVar container">
+        <section class="heightVar">
+            
+            <article class="subProject blockProject">
+                <h3>About React on GH pages</h3>
+                <p>GitHub link: <a href="https://github.com/Buzz42er/react-gh-pages/">React page</a></p>
+                <p>Only thing to achive here was to get react app, up and running on gh pages and I did that by:<br>
+                    <span>- create react app  </span><br>
+                    <span>- changing path for git, so that it could run properly, that I did only once, so for the Task Tracker I just tested if everything is on its place </span><br>
+                    <span>- trough comand prompt installed gh pages program, that helps react app integrate with gh pages correctly</span><br>
+                    <span>- then modified package.json file, that you need to do every time</span><br>
+                    <span>- clicked of couple of things in GitHub and that was it, i had my app running in GitHub</span><br><br>
+                    <b class="subTitle">The hardest thing to get trough is was:</b> <br>
+                    <span>- to find out what is actually wrong with git, why do it not work </span><br>
+                    <span>- to figure that out, i spend some time researching git because there was an error when ever I tried to do something with Git </span><br>
+                    <span>- finally I found out there could be a path issue and, I had some problems with my machine recently hard reset and so on, so it could be that </span><br>
+                    <span>- and of course, after finding path for git, there was none correct one, so after changing that, i could use git in console again </span><br><br>
+
+                    <b class="subTitle">One more thing happened:</b> <br>
+                    <span>- after dealing with Git in console, there was another problem, and that was that github didn't recognize my machines as one for my account even doe I had GitHub desktop installed</span><br>
+                    <span>- there was the key, ssh key problem, my account didn't have one, and it need one for my git commands form console to apply to my GitHub, and I couldn't get my app to work with gh pages otherwise </span> <br>
+                    <span>- so I found out how to get to the public key that i needed, and with pasting it in my Account settings they were successfully connected</span>
+                    <span>- after that was over fiew simple commands to console and my app was running, because of this, in future I only need to modify .json file, and install gh pages program for everthing to work</span>
+                </p>
+            </article>
+        </section>
+    </div>
+
     <!--kraj stranice-->
     <footer>
         <address>
