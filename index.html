@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jure Ereš</title>
     <!--Naslovna stranica-->
-
+    <script src="./src/script.js"></script>
     <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/projects.css">
 </head>
 
 <body>
@@ -28,36 +29,36 @@
         </span>
     </nav>
 
-    <!--prostor za sadržaj-->
+    <!--prostor za sadržaj-->                      <!--------------------ABOUT---------------------------->
     <div class="container" id="o-meni">
         <section>
             <h2 class="naslovi">A B O U T<br><br>M E</h2>
             <h2 class="nasloviMOB">ABOUT</h2>
             <div class="mob-o-meni">
-                <h3><a href="./stranice/AboutMe.html">Skills</a></h3>
+                <h3><a href="./stranice/AboutMe.html#skills">Skills</a></h3>
                 <ul>
-                    <li><a href="">React</a></li>
-                    <li><a href="">CSS</a></li>
-                    <li><a href="">More...</a></li>
+                    <li><a href="./stranice/AboutMe.html#skills">React</a></li>
+                    <li><a href="./stranice/AboutMe.html#skills">CSS</a></li>
+                    <li><a href="./stranice/AboutMe.html#skills">More...</a></li>
                 </ul>
-                <h3><a href="./stranice/AboutMe/education.html">Education</a></h3>
+                <h3><a href="./stranice/AboutMe.html#education">Education</a></h3>
                 <ul>
-                    <li><a href="">Algebra</a></li>
-                    <li><a href="">sololearn</a></li>
-                    <li><a href="">More...</a></li>
+                    <li><a href="./stranice/AboutMe.html#education">Algebra</a></li>
+                    <li><a href="./stranice/AboutMe.html#education">sololearn</a></li>
+                    <li><a href="./stranice/AboutMe.html#education">More...</a></li>
                 </ul>
-                <h3><a href="./stranice/AboutMe/experiance.html">Experiance</a></h3>
+                <h3><a href="./stranice/AboutMe.html#experiance">Experiance</a></h3>
                 <ul>
-                    <li><a href="">A1</a></li>
-                    <li><a href="">Hangar 18</a></li>
-                    <li><a href="">More...</a></li>
+                    <li><a href="./stranice/AboutMe.html#experiance">A1</a></li>
+                    <li><a href="./stranice/AboutMe.html#experiance">Hangar 18</a></li>
+                    <li><a href="./stranice/AboutMe.html#experiance">More...</a></li>
                 </ul>
             </div>
             <div class="img">
                 <svg viewBox="0 0 547 460" id="svg-o-meni">
-                    <a href=""><text transform="matrix(1 0 0 1 176 68)" font-size="38px" fill="#FFFFFF" font-weight="bold">Skills</text></a>
-                    <a href=""><text transform="matrix(1 0 0 1 355 220)" font-size="29px" font-weight="bold" fill="#FFFFFF">Education</text></a>
-                    <a href=""><text transform="matrix(1 0 0 1 80 292)"  font-size="25px" font-weight="bold" fill="#FFFFFF">Experiance</text></a>
+                    <a href=""><text transform="matrix(1 0 0 1 176 68)" font-size="38px" fill="#FFFFFF" font-weight="bold"><a href="./stranice/AboutMe.html#skills">Skills</a></text></a>
+                    <a href=""><text transform="matrix(1 0 0 1 355 220)" font-size="29px" font-weight="bold" fill="#FFFFFF"><a href="./stranice/AboutMe.html#education">Education</a></text></a>
+                    <a href=""><text transform="matrix(1 0 0 1 80 292)"  font-size="25px" font-weight="bold" fill="#FFFFFF"><a href="./stranice/AboutMe.html#experiance">Experiance</a></text></a>
                     </svg>
             </div>
         </section>
@@ -69,33 +70,54 @@
     <!--uski div širine zaslona, dekoracija-->
     <div class="razdjelnik"></div>
 
-    <!--prostor za sadržaj-->
+    <!--prostor za sadržaj-->                    <!--------------------PROJECTS---------------------------->
     <div class="container" id="projekti">
         <section id="projects">
             <h2 class="nasloviMOB">PROJECTS</h2>
             <article id="project">
                 <h3>Basics</h3>
                 <ul>
-                    <button></button>
-                    <a href=""><img class="projectImg" src="./slike-projekata/Snimka zaslona (16).png" alt="" width="280" height="150"></a>
-                    <button></button>
-                    <li><a href="">Core Tools</a></li> <!--HTML, CSS, JS-->
-                    <a href=""><img class="projectImg" src="./slike-projekata/Snimka zaslona (11).png" alt="" width="280" height="150"></a>
-                    <li><a href="">Design</a></li> <!--Figma, Canva-->
-                    <a href=""><img class="projectImg" src="./slike-projekata/Snimka zaslona (12).png" alt="" width="280" height="150"></a>
-                    <li><a href="">Support</a></li> <!--git, github, node, json-server-->
+                    <div class="imgSlidersDiv">
+                        <button id="beforeCT" onclick="beforeCT()"></button>
+                        <a href="./stranice/Projects.html#coreTools">
+                            <div class="dimensionsImg">
+                                <img id="imgCoreTools" class="projectImg" src="./slike-projekata/Snimka zaslona (16).png" alt="" width="280" height="150">
+                            </div>
+                        </a>
+                        <button id="afterCT" onclick="afterCT()"></button>
+                    </div>
+                    
+                    <li><a href="./stranice/Projects.html#coreTools">Core Tools</a></li> <!--HTML, CSS, JS-->
+                    
+                    <button id="beforeD" onclick="beforeD()"></button>
+                    <a href="./stranice/Projects.html"><img id="imgDesign" class="projectImg" src="./slike-projekata/Snimka zaslona (11).png" alt="" width="280" height="150"></a>
+                    <button id="afterD" onclick="afterD()"></button>
+                    <li><a href="./stranice/Projects.html">Design</a></li> <!--Figma, Canva-->
+                    
+                    <button id="beforeS" onclick="beforeS()"></button>
+                    <a href="./stranice/Projects.html#support"><img id="imgSupport" class="projectImg" src="./slike-projekata/Snimka zaslona (12).png" alt="" width="280" height="150"></a>
+                    <button id="afterS" onclick="afterS()"></button>
+                    <li><a href="./stranice/Projects.html#support">Support</a></li> <!--git, github, node, json-server-->
 
                 </ul>
             </article>
             <article id="project">
                 <h3>Libreries / Frameworks</h3>
                 <ul>
-                    <a href=""><img class="projectImg" src="./slike-projekata/Snimka zaslona (18).png" alt="" width="280" height="150"></a>
-                    <li><a href=""><div class="projectLi">React</div></a></li>
-                    <a href=""><img class="projectImg" src="./slike-projekata/Snimka zaslona (15).png" alt="" width="280" height="150"></a>
-                    <li><a href=""><div class="projectLi">Angular</div></a></li>
-                    <a href=""><img class="projectImg" src="./slike-projekata/Snimka zaslona (15).png" alt="" width="280" height="150"></a>
-                    <li><a href=""><div class="projectLi">jQuery and Ruby</div></a></li>
+                    <button id="beforeR" onclick="beforeR()"></button>
+                    <a href="./stranice/Projects.html#react"><img id="imgReact" class="projectImg" src="./slike-projekata/Snimka zaslona (18).png" alt="" width="280" height="150"></a>
+                    <button id="afterR" onclick="afterR()"></button>
+                    <li><a href="./stranice/Projects.html#react"><div class="projectLi">React</div></a></li>
+                    
+                    <button id="beforeA" onclick="beforeA()"></button>
+                    <a href="./stranice/Projects.html"><img id="imgAngular" class="projectImg" src="./slike-projekata/Snimka zaslona (15).png" alt="" width="280" height="150"></a>
+                    <button id="afterA" onclick="afterA()"></button>
+                    <li><a href="./stranice/Projects.html"><div class="projectLi">Angular</div></a></li>
+                    
+                    <button id="beforeQ" onclick="beforeQ()"></button>
+                    <a href="./stranice/Projects.html"><img id="imgRubyjQuery" class="projectImg" src="./slike-projekata/Snimka zaslona (15).png" alt="" width="280" height="150"></a>
+                    <button id="afterQ" onclick="afterQ()"></button>
+                    <li><a href="./stranice/Projects.html"><div class="projectLi">jQuery and Ruby</div></a></li>
                 </ul>
             </article>
             <h2 class="naslovi">P R O J E C T S</h2>
@@ -108,7 +130,7 @@
     <!--pozadinska slika širine zaslona, dekoracija-->
     <div class="pozadinskaSlika"></div>
 
-    <!--prostor za sadržaj-->
+    <!--prostor za sadržaj-->                         <!--------------------CONTACT---------------------------->
     <div  class="container" id="kontakt">
         <section>
             <h2 class="naslovi">C O N T A C T</h2>
