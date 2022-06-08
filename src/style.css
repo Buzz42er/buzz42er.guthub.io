@@ -53,31 +53,6 @@ header h1 {
     justify-content: center;
 }
 
-.subHeader {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    position: relative;
-    z-index: -5;
-    padding: 5% 0 5% 0;
-    margin: 0;
-
-    background-image: url("/photos/aastr-moon-shat.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    box-shadow: inset 0 -5px 10px -4px rgba(0, 0, 0, 0.856);
-
-    color: rgb(255, 255, 255);
-    font-size: 3em;
-    font-weight: bolder;
-    text-shadow: 1px 1px 1em rgb(0, 0, 0), -1px -1px 1em black;
-    /*blur all ower*/
-    width: 100%;
-    height: 150px;
-}
-
 h5 {
     color: rgb(0, 168, 190);
 }
@@ -198,14 +173,6 @@ article{
     width: 400px;
     height: 450px;
     margin: 15px;
-}
-
-.subArticle {
-    background-color: transparent;
-    border: none;
-    width: 300px;
-    height: 500px;
-    margin: 15px 0 15px 0;
 }
 
 .subArticle h3, .subProject h3 {
