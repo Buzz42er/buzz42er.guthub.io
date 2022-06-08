@@ -1,0 +1,18 @@
+
+
+
+
+                                /*mobile nav*/
+
+@media screen and (max-width: 280px){
+    nav {
+       height: 135px;       
+    }
+
+    .navi {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
