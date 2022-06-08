@@ -1,50 +1,5 @@
                     /*Projects section on main html*/
 
-#projekti, #projects {
-    height: 800px;
-}
-
-#project {
-    height: 650px;
-}
-
-#project p {
-    margin-top: 5px;
-    margin-left: 60px;
-}
-
-.imgSlidersDiv {
-    display: flex;
-    justify-content: center;
-}
-
-.dimensionsImg {
-    width: 280px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-}
-
-.projectImg {
-    border-radius: 1px;
-    box-shadow: 0 0 10px 5px rgba(29, 29, 29, 0.685);
-    margin-top: 0;
-}
-
-button {
-    background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    width: 40px;
-}
-
-
-button:active {
-    transform: scale(1.05);
-}
-
 
                     /*Projects html file*/
 
@@ -58,16 +13,7 @@ button:active {
     list-style-type: none;
 }
 
-.subProject {
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border: none;
-    width: 900px;
-    height: 500px;
-    margin: 15px;
-}
+
 
 .blockProject {
     display: block;

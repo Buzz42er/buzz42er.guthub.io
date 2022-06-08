@@ -1,8 +1,5 @@
                     /*About section on main html*/
 
-
-                    /*About html file*/
-
 .subHeader {
     display: flex;
     flex-direction: column;
@@ -30,10 +27,8 @@
 }
 
 .subHeader h1 {
-    
-    display: contents;
+    display: contents; 
 }
-
 
 .subArticle {
     background-color: transparent;
@@ -42,3 +37,46 @@
     height: 500px; 
     margin: 15px 0 15px 0;
 }
+
+.subProject {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    width: 900px;
+    height: 500px;
+    margin: 15px;
+}
+
+.subTitle {
+    font-size: 1.2em;
+    color: rgb(0, 168, 190);
+}
+
+.question {
+    margin-left: 30px;
+    margin-bottom: 0;
+}
+
+.answer {
+    margin-top: 0;
+    margin-left: 60px;
+}
+
+iframe {
+    height: 500px;
+    width: 900px;
+}
+
+.iFrameDiv {
+    border-radius:10px;
+    box-shadow: 0 0 10px 5px rgba(29, 29, 29, 0.685);
+    margin-bottom: 30px;
+}
+
+.tehIcons {
+    width: 900px;
+    height: 50px;
+}
+
