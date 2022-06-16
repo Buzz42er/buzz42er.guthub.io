@@ -16,35 +16,41 @@
 <body>
     
     <header>
+        <button id="menuButton" type="button" onclick="openNav()">
+            <div class='menuIcon'>
+                <img src="./iconsDone/menu.png" alt="" width="75px" height="75px">
+            </div>
+        </button> 
         <h1>Jure Eres</h1>
-        <button type="button" href="./stranice/HireMe.html">H</button> <!--does not work for now, needs to be a correct way, don't know it jet-->
+        <!--does not work for now, needs to be a correct way, don't know it jet-->
     </header>
 
     <!--navigacija stranice-->
-    <nav>
+    <nav id="nav" onmouseover="navHover()" >
             <span>
                 <a href="#">
                     <img src="./iconsDone/HOME ROCKET.png" alt="HOME ROCKET" srcset="">
-                    
                 </a>
-                
+                <span>HOME</span>
             </span>
 
             <span>
                 <a href="#o-meni">
                     <img src="./iconsDone/ABOUT.png" alt="ABOUT">
-
                 </a>
+                <span>ABOUT</span>
             </span>
             <span>
                 <a href="#projekti">
                     <img src="./iconsDone/PROJECTS.png" alt="PROJECTS">
                 </a>
+                <span>PROJECTS</span>
             </span>
             <span>
                 <a href="#kontakt">
                     <img src="./iconsDone/CONTACT.png" alt="CONTACT">
                 </a>
+                <span>CONTACT</span>
             </span>
     </nav>
 
@@ -75,9 +81,9 @@
             </div>
             <div class="img">
                 <svg viewBox="0 0 547 460" id="svg-o-meni">
-                    <a href=""><text transform="matrix(1 0 0 1 176 68)" font-size="38px" fill="#FFFFFF" font-weight="bold"><a href="./stranice/AboutMe.html#skills">Skills</a></text></a>
-                    <a href=""><text transform="matrix(1 0 0 1 355 220)" font-size="29px" font-weight="bold" fill="#FFFFFF"><a href="./stranice/AboutMe.html#education">Education</a></text></a>
-                    <a href=""><text transform="matrix(1 0 0 1 80 292)"  font-size="25px" font-weight="bold" fill="#FFFFFF"><a href="./stranice/AboutMe.html#experiance">Experiance</a></text></a>
+                    <a href=""><text transform="matrix(1 0 0 1 176 68)" class="aboutLinks" font-size="38px" fill="#FFFFFF" font-weight="bold"><a href="./stranice/AboutMe.html#skills">Skills</a></text></a>
+                    <a href=""><text transform="matrix(1 0 0 1 355 220)" class="aboutLinks" font-size="29px" font-weight="bold" fill="#FFFFFF"><a href="./stranice/AboutMe.html#education">Education</a></text></a>
+                    <a href=""><text transform="matrix(1 0 0 1 80 292)" class="aboutLinks" font-size="25px" font-weight="bold" fill="#FFFFFF"><a href="./stranice/AboutMe.html#experiance">Experiance</a></text></a>
                     </svg>
             </div>
         </section>
@@ -99,48 +105,48 @@
 
                     <!--Img Slide Show-->
                     <div class="imgSlidersDiv">
-                        <button id="beforeCT" onclick="beforeCT()">
-                            <img src="/icons/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.png" alt="" width="40px">
+                        <button class="arrows" id="beforeCT" onclick="beforeCT()">
+                            <img src="/iconsDone/arrow_back.png" alt="" width="40px">
                         </button>
                         <a href="./stranice/Projects.html#coreTools">
                             <div class="dimensionsImg">
                                 <img id="imgCoreTools" class="projectImg" src="./slike-projekata/Snimka zaslona (16).png" alt="" width="280" height="150">
                             </div>
                         </a>
-                        <button id="afterCT" onclick="afterCT()">
-                            <img src="/icons/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.png" alt="" width="40px">
+                        <button class="arrows" id="afterCT" onclick="afterCT()">
+                            <img src="/iconsDone/arrow_forward.png" alt="" width="40px">
                         </button>
                     </div>
                     <p><a href="./stranice/Projects.html#coreTools">Core Tools</a></p> <!--HTML, CSS, JS-->
         
 
                     <div class="imgSlidersDiv">
-                        <button id="beforeD" onclick="beforeD()">
-                            <img src="/icons/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.png" alt="" width="40px">
+                        <button class="arrows" id="beforeD" onclick="beforeD()">
+                            <img src="/iconsDone/arrow_back.png" alt="" width="40px">
                         </button>
                         <a href="./stranice/Projects.html">
                             <div class="dimensionsImg">
                                 <img id="imgDesign" class="projectImg" src="./slike-projekata/Snimka zaslona (11).png" alt="" width="280" height="150">
                             </div>
                         </a>
-                        <button id="afterD" onclick="afterD()">
-                            <img src="/icons/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.png" alt="" width="40px">
+                        <button class="arrows" id="afterD" onclick="afterD()">
+                            <img src="/iconsDone/arrow_forward.png" alt="" width="40px">
                         </button>
                     </div>
                     <p><a href="./stranice/Projects.html">Design</a></p> <!--Figma, Canva-->
                     
 
                     <div class="imgSlidersDiv">
-                        <button id="beforeS" onclick="beforeS()">
-                            <img src="/icons/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.png" alt="" width="40px">
+                        <button class="arrows" id="beforeS" onclick="beforeS()">
+                            <img src="/iconsDone/arrow_back.png" alt="" width="40px">
                         </button>
                         <a href="./stranice/Projects.html#support">
                             <div class="dimensionsImg">
                                 <img id="imgSupport" class="projectImg" src="./slike-projekata/Snimka zaslona (12).png" alt="" width="280" height="150">
                             </div>
                         </a>
-                        <button id="afterS" onclick="afterS()">
-                            <img src="/icons/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.png" alt="" width="40px">
+                        <button class="arrows" id="afterS" onclick="afterS()">
+                            <img src="/iconsDone/arrow_forward.png" alt="" width="40px">
                         </button>
                     </div>
                     <p><a href="./stranice/Projects.html#support">Support</a></p> <!--git, github, node, json-server-->
@@ -152,44 +158,46 @@
                 
 
                     <div class="imgSlidersDiv">
-                        <button id="beforeR" onclick="beforeR()">
-                            <img src="/icons/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.png" alt="" width="40px">
+                        <button class="arrows" id="beforeR" onclick="beforeR()">
+                            <img src="/iconsDone/arrow_back.png" alt="" width="40px">
                         </button>
                         <a href="./stranice/Projects.html#react">
                             <div class="dimensionsImg">
                                 <img id="imgReact" class="projectImg" src="./slike-projekata/Snimka zaslona (18).png" alt="" width="280" height="150">
                             </div>
                         </a>
-                        <button id="afterR" onclick="afterR()">
-                            <img src="/icons/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.png" alt="" width="40px">
+                        <button class="arrows" id="afterR" onclick="afterR()">
+                            <img src="/iconsDone/arrow_forward.png" alt="" width="40px">
                         </button>
                     </div>
                     <p><a href="./stranice/Projects.html#react">React</a></p>
                     
 
                     <div class="imgSlidersDiv">
-                        <button id="beforeA" onclick="beforeA()">
-                            <img src="/icons/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.png" alt="" width="40px">
+                        <button class="arrows" id="beforeA" onclick="beforeA()">
+                            <img src="/iconsDone/arrow_back.png" alt="" width="40px">
                         </button>
                         <a href="./stranice/Projects.html">
-                            <img id="imgAngular" class="projectImg" src="./slike-projekata/Snimka zaslona (15).png" alt="" width="280" height="150">
+                            <div class="dimensionsImg">
+                                <img id="imgAngular" class="projectImg" src="./slike-projekata/Snimka zaslona (15).png" alt="" width="280" height="150">
+                            </div>
                         </a>
-                        <button id="afterA" onclick="afterA()">
-                            <img src="/icons/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.png" alt="" width="40px">
+                        <button class="arrows" id="afterA" onclick="afterA()">
+                            <img src="/iconsDone/arrow_forward.png" alt="" width="40px">
                         </button>
                     </div>
                     <p><a href="./stranice/Projects.html">Angular</a></p>
                     
 
                     <div class="imgSlidersDiv">
-                        <button id="beforeQ" onclick="beforeQ()">
-                            <img src="/icons/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.png" alt="" width="40px">
+                        <button class="arrows" id="beforeQ" onclick="beforeQ()">
+                            <img src="/iconsDone/arrow_back.png" alt="" width="40px">
                         </button>
                         <a href="./stranice/Projects.html">
-                            <img id="imgRubyjQuery" class="projectImg" src="./slike-projekata/Snimka zaslona (15).png" alt="" width="280" height="150">
+                                <img id="imgRubyjQuery" class="projectImg" src="./slike-projekata/Snimka zaslona (15).png" alt="" width="280" height="150">
                         </a>
-                        <button id="afterQ" onclick="afterQ()">
-                            <img src="/icons/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.png" alt="" width="40px">
+                        <button class="arrows" id="afterQ" onclick="afterQ()">
+                            <img src="/iconsDone/arrow_forward.png" alt="" width="40px">
                         </button>
                     </div>
                     <p><a href="./stranice/Projects.html">jQuery and Ruby</a></p>
