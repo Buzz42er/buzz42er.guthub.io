@@ -14,6 +14,29 @@ font-family: 'Exo', sans-serif;
 font-family: 'UnifrakturMaguntia', cursive;
 */
 
+/*Privremeno*/
+
+#menuButton {
+    display: none;
+}
+
+.mobileNone1 {
+    display: flex;
+    justify-content: center;
+    
+    font-size: medium;
+    font-family: 'Comfortaa', cursive;
+    
+}
+
+#mobileNone2 {
+    display: flex;
+    justify-self: center;
+
+}
+
+/*end of privremeno*/
+
 body {
     font-family: 'Comfortaa', cursive;
     background-color: #161616;
@@ -28,6 +51,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    align-items: center;
     position: relative;
     
     padding: 0 0 15% 0;
