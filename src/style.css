@@ -32,7 +32,7 @@ font-family: 'UnifrakturMaguntia', cursive;
 #mobileNone2 {
     display: flex;
     justify-self: center;
-    animation: slide1 1s ease-in-out 3;
+    animation: slide1 0.7s ease-in-out 3;
 
 }
 
