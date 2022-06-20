@@ -1,5 +1,12 @@
 @media screen and (max-width: 915px) and (max-height:1368px) {
 
+    /*Privremeno*/
+    .mobileNone1, #mobileNone2 {
+        display: none;
+    }
+
+    /*end of privremeno*/
+
     body {
         margin: 0;
         background-color: #1C1C1C;
