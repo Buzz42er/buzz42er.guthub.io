@@ -21,7 +21,7 @@ var imgReactArray = [
 
 var imgAngularArray = ["./slike-projekata/Snimka zaslona (15).png"];
 
-var imgRubyjQueryArray = ["./slike-projekata/Snimka zaslona (15).png"];
+var imgjQueryArray = ["./slike-projekata/Snimka zaslona (15).png"];
 //number for compare place of item in array
 var numCT = 0,
   numD = 0,
@@ -153,23 +153,23 @@ function afterA() {
 }
 
 function beforeQ() {
-  var imgRubyjQuery = document.getElementById("imgRubyjQuery");
+  var imgjQuery = document.getElementById("imgjQuery");
   numQ--;
 
   if (numQ < 0) {
-    numQ = imgRubyjQueryArray.length - 1;
+    numQ = imgjQueryArray.length - 1;
   }
-  imgRubyjQuery.src = imgRubyjQueryArray[numQ];
+  imgjQuery.src = imgjQueryArray[numQ];
 }
 
 function afterQ() {
-  var imgRubyjQuery = document.getElementById("imgRubyjQuery");
+  var imgjQuery = document.getElementById("imgjQuery");
   numQ++;
 
-  if (numQ >= imgRubyjQueryArray.length) {
+  if (numQ >= imgjQueryArray.length) {
     numQ = 0;
   }
-  imgRubyjQuery.src = imgRubyjQueryArray[numQ];
+  imgjQuery.src = imgjQueryArray[numQ];
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

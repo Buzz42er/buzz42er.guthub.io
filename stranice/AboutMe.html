@@ -22,33 +22,37 @@
 <body>
     <div class="subHeader">
         <h1>About Me</h1>
-        <button>DOWNLOAD CV</button>
+        <button hidden>DOWNLOAD CV</button>
     </div>
 
     <!--navigacija stranice-->
-    <nav>
+    <nav id="nav" onmouseover="navHover()">
         <span>
-            <a href="../index.html">
-                <img src="../iconsDone/HOME ROCKET.png" alt="" srcset="">
+            <a href="/index.html#">
+                <img src="../iconsDone/HOME ROCKET.png" alt="HOME ROCKET" srcset="">
             </a>
+            <span>HOME</span>
         </span>
 
         <span>
-            <a href="../index.html#o-meni">
-                <img src="../iconsDone/ABOUT.png" alt="">
+            <a href="/index.html#o-meni">
+                <img src="../iconsDone/ABOUT.png" alt="ABOUT">
             </a>
+            <span>ABOUT</span>
         </span>
         <span>
-            <a href="../index.html#projekti">
-                <img src="../iconsDone/PROJECTS.png" alt="">
+            <a href="/index.html#projekti">
+                <img src="../iconsDone/PROJECTS.png" alt="PROJECTS">
             </a>
+            <span>PROJECTS</span>
         </span>
         <span>
-            <a href="../index.html#kontakt">
-                <img src="../iconsDone/CONTACT.png" alt="">
+            <a href="/index.html#kontakt">
+                <img src="../iconsDone/CONTACT.png" alt="CONTACT">
             </a>
+            <span>CONTACT</span>
         </span>
-</nav>
+    </nav>
 
     <!--prostor za sadržaj-->
     <div class="container" >
@@ -119,13 +123,67 @@
 
             <article class="subArticle">
                 <h3>Libreries</h3>
+                <ul>
+                    <h5>React.js</h5>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+
+
+                    <h5>jQuery</h5>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+
+                    <h5></h5>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    
+                </ul>
             </article>
             <article class="subArticle">
                 <h3>Frameworks</h3>
+
+                <ul>
+                    <h5>Angular</h5>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+
+                    <h5>Vue</h5>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+
+                    <h5></h5>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    
+                </ul>
                 
             </article>
             <article class="subArticle">
                 <h3>Other</h3>
+                <ul>
+                    <h5>Ruby</h5>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+
+
+                    <h5>SQL</h5>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+
+                    <h5></h5>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    
+                </ul>
             </article>
         </section>
     </div>
@@ -143,8 +201,68 @@
             <h2 class="nasloviMOB">Education</h2>
             <article class="subArticle">
 
+                <h3>Algebra</h3> <br>
+                <ul>
+                    <h5>Frontend Development</h5>
+                    <li>HTML</li>
+                    <p>in depth on HTML, and a bit about XML</p>
+
+                    <li>CSS</li>
+                    <p>Core CSS, Sass, Less, SCSS</p>
+
+                    <li>JS</li>
+                    <p>Core JS in depth, Node.js, js patterns</p>
+
+                    <li>Razvojna Okolina</li>
+                    <p></p>
+
+                    <li>React.js</li>
+                    <p></p>
+
+                    <li>Redux</li>
+                    <p></p>
+
+                </ul>
+
+            </article>
+
+            <article class="subArticle">
+
+                <h3>SoloLearn</h3> <br>
+                <ul>
+                    <h5>Certificates</h5>
+                    <li>HTML</li>
+                    <p>in depth on HTML, and a bit about XML</p>
+
+                    <li>CSS</li>
+                    <p>Core CSS, Sass, Less, SCSS</p>
+
+                    <li>JS</li>
+                    <p>Core JS in depth, Node.js, js patterns</p>
+
+                    <li></li>
+                    <p></p>
+
+                    <li></li>
+                    <p></p>
+
+                    <li></li>
+                    <p></p>
+
+                </ul>
+
             </article>
             
+            <article class="subArticle">
+
+                <h3>Veterinarska <br> škola Zagreb</h3>
+                <ul>
+                    <h5>Veterinarski tehničar</h5>
+
+                </ul>
+
+            </article>
+
         </section>
     </div>
     <!--pozadinska slika širine zaslona, dekoracija-->
@@ -169,7 +287,43 @@
             <h2 class="nasloviMOB">Experiance</h2>
             <article class="subArticle">
 
+                <h3>Amazon Affiliate</h3>  <br>
+                <ul>
+                    <h5>Self-employed</h5>
+                    <li>SEO, website creation, visual site optimization, simple back-end</li>
+                    <li>marketing, product research, market research</li>
+                    <li>tools: website bilder, host provider, HTML, CSS, JS</li>
+
+                </ul>
+
             </article>
+
+            <article class="subArticle">
+
+                <h3>IT equipment <br> sales consultant</h3> 
+                <ul>
+                    <h5>Hangar 18 d.o.o.</h5>
+                    <li>computer maintenance, assembly, systems installation and setup</li>
+                    <li>work at the registry, sale face2face, IT goods consultant</li>
+                    <li>database operation (luceed), work in Windows Office sistem</li>
+
+                </ul>
+
+            </article>
+
+            <article class="subArticle">
+
+                <h3>TS agent for <br> bussiness clients</h3> 
+                <ul>
+                    <h5>A1 Hrvatska</h5>
+                    <li>database work (siebel), work in Windows Office sistem</li>
+                    <li>negotiations on existing and new services, care for existing users</li>
+                    <li>regular contact with existing clients, concluding business cooperation</li>
+
+                </ul>
+
+            </article>
+
         </section>
     </div>
     <!--pozadinska slika širine zaslona, dekoracija-->
@@ -178,10 +332,41 @@
     <!--prostor za sadržaj-->
     <div class="container" >
         <section>
-            
             <article class="subArticle">
 
+                <h3>Driver</h3> 
+                <ul>
+                    <h5>Legadema</h5>
+                    <li>transport of frozen goods</li>
+                    <li>logistics</li>
+                    <li>client comunications</li>
+                </ul>
+
             </article>
+
+            <article class="subArticle">
+
+                <h3>Delivery</h3> 
+                <ul>
+                    <h5>MetaMate</h5>
+                    <li>car delivery</li>
+                    <li>working nights, 10-12 hours on the road</li>
+                </ul>
+
+            </article>
+
+            <article class="subArticle">
+
+                <h3>Salesman</h3> 
+                <ul>
+                    <h5>Sport Vision</h5>
+                    <li>face2face sales</li>
+                    <li>article sorting</li>
+                    <li>receipt of goods, getting it into database</li>
+                </ul>
+
+            </article>
+
         </section>
     </div>
 
@@ -191,18 +376,17 @@
             <h3 id="kontakt">Contact</h3>
             <span>
                 <li><a href="mailto:jure.eres42@gmail.com?subject=Upit sa stranice" target="mail">E-mail</a></li>
-                <li><a href="tel:+385915735157">Phone</a></li>
                 <li><a href="https://github.com/Buzz42er" target="_blank">GitHub</a></li>
-                <li><a href="https://www.sololearn.com/profile/12213856">SoloLearn</a></li>
+                <li><a href="https://www.sololearn.com/profile/12213856" target="_blank">SoloLearn</a></li>
                 <li><a href="https://www.linkedin.com/in/jure-ere%C5%A1-b4a33a167/" target="_blank">LinkedIn</a></li>
             </span>
         </address>
         <article>
             <h3>Shortcuts</h3>
             <span>
-                <li><a href="../index.html#">Home</a></li>
-                <li><a href="../index.html#obrazovanje">Education</a></li>
-                <li><a href="../index.html#projekti">Projects</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="./stranice/AboutMe.html#education">Education</a></li>
+                <li><a href="#projekti">Projects</a></li>
             </span>
         </article>
 

@@ -85,3 +85,10 @@ iframe {
     height: 50px;
 }
 
+/* Aobut page specifics */
+
+.subArticle ul p {
+    margin-top: 5px;
+    margin-bottom: 25px;
+    font-size: small;
+}
