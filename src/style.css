@@ -16,11 +16,7 @@ font-family: 'UnifrakturMaguntia', cursive;
 
 /*Privremeno*/
 
-#menuButton {
-    display: none;
-}
-
-.mobileNone1 {
+/* .mobileNone1 {
     display: flex;
     justify-content: center;
     
@@ -31,7 +27,7 @@ font-family: 'UnifrakturMaguntia', cursive;
 
 #mobileNone2 {
     display: flex;
-    justify-self: center;
+    justify-content: center;
     animation: slide1 0.7s ease-in-out 3;
 
 }
@@ -50,6 +46,10 @@ font-family: 'UnifrakturMaguntia', cursive;
     50% {
       transform: translate(0px, 10px);
     }
+  } */
+
+  #mobileNone2, .mobileNone1  {
+    display: none;
   }
 
 /*end of privremeno*/
@@ -68,7 +68,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    align-items: center;
+
     position: relative;
     
     padding: 0 0 15% 0;
@@ -98,6 +98,8 @@ header h1 {
 }
 
 #menuButton {
+    display: flex;
+    justify-self: flex-start;
     margin: 30px;
     padding: 0;
     width: 75px;
@@ -107,6 +109,8 @@ header h1 {
 }
 
 .menuIcon {
+    display: flex;
+    justify-self: flex-start;
     cursor: pointer;
 
 }

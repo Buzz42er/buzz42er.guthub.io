@@ -176,20 +176,27 @@ function afterQ() {
 //nav popup
 
 const navHover = function navHover() {
-    const nav = document.getElementById("nav");
-
-    nav.style.transition = "all 1s";
+  const nav = document.getElementById("nav");
+  console.log("hovered")
+  
+  nav.style.height = "80px";
+  nav.style.transition = "all 1s";
   
 };
+
+function navOut(){
+  nav.style.height = "10px";
+  console.log("to 10px");
+}
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Menu button
 
-function openNav() {
+const openNav = function openNav() {
   const menuButton = document.getElementById("menuButton");
   const nav = document.getElementById("nav");
 
-  menuButton.addEventListener("click", function () {
+
     nav.style.height = "50px";
     console.log("to 50px");
 
@@ -197,8 +204,9 @@ function openNav() {
       nav.style.height = "10px";
       console.log("to 10px");
     }, 600);
-  });
+    
 };
+
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
