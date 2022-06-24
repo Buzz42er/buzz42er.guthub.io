@@ -175,37 +175,47 @@ function afterQ() {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //nav popup
 
-const navHover = function navHover() {
-  const nav = document.getElementById("nav");
-  console.log("hovered")
-  
-  nav.style.height = "80px";
-  nav.style.transition = "all 1s";
-  
-};
+const Nav = document.getElementById("Nav");
 
-function navOut(){
-  nav.style.height = "10px";
-  console.log("to 10px");
+   
+Nav.addEventListener("mouseover", up)
+Nav.addEventListener("mouseout", down)
+
+
+function up () {
+// console.log("hovered")
+
+Nav.style.transition = "all 1s";
+Nav.style.height = "80px";
 }
+
+function down() {
+// console.log('out')
+
+Nav.style.transition = "all 1s";
+Nav.style.height = "10px";
+}
+
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Menu button
 
 const openNav = function openNav() {
-  const menuButton = document.getElementById("menuButton");
-  const nav = document.getElementById("nav");
+const Nav = document.getElementById("Nav");
 
+Nav.style.transition = "all 1s";
+Nav.style.height = "50px";
+// console.log("to 50px");
 
-    nav.style.height = "50px";
-    console.log("to 50px");
+setTimeout(function navBackDown() {
+  Nav.style.transition = "all 1s";
+  Nav.style.height = "10px";
+  // console.log("to 10px");
+}, 600);
 
-    setTimeout(function navBackDown() {
-      nav.style.height = "10px";
-      console.log("to 10px");
-    }, 600);
-    
 };
+
 
 
 

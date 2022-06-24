@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jure Ereš</title>
     <!--Naslovna stranica-->
-    <script src="./src/script.js"></script>
+    <script defer src="./src/script.js"></script>
     <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="./src/mainMobile.css">
     <link rel="stylesheet" href="./src/nav.css">
@@ -29,7 +29,7 @@
     </header>
 
     <!--navigacija stranice-->
-    <nav id="nav" onmouseover="navHover()" onmouseout="navOut()">
+    <nav id="Nav">
             <span>
                 <a href="#">
                     <img src="./iconsDone/HOME ROCKET.png" alt="HOME ROCKET" srcset="">
@@ -56,6 +56,34 @@
                 <span>CONTACT</span>
             </span>
     </nav>
+
+    <nav id="NavMob">
+        <span>
+            <a href="#">
+                <img src="./iconsDone/HOME ROCKET.png" alt="HOME ROCKET" srcset="">
+            </a>
+            <span>HOME</span>
+        </span>
+
+        <span>
+            <a href="#o-meni">
+                <img src="./iconsDone/ABOUT.png" alt="ABOUT">
+            </a>
+            <span>ABOUT</span>
+        </span>
+        <span>
+            <a href="#projekti">
+                <img src="./iconsDone/PROJECTS.png" alt="PROJECTS">
+            </a>
+            <span>PROJECTS</span>
+        </span>
+        <span>
+            <a href="#kontakt">
+                <img src="./iconsDone/CONTACT.png" alt="CONTACT">
+            </a>
+            <span>CONTACT</span>
+        </span>
+</nav>
 
     <!--prostor za sadržaj-->                      <!--------------------ABOUT---------------------------->
     <div class="container" id="o-meni">
