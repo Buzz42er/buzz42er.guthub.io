@@ -493,7 +493,7 @@ footer span {
     .mob-o-meni {
         display: initial;
         display: flex;
-        width: 30%;
+        width: 80%;
         height: auto;
         flex-direction: column;
         justify-content: flex-start;

@@ -122,6 +122,11 @@
         align-items: center;
     }
 
+    .mob-o-meni li{
+        font-size: 0.7em;
+        
+    }
+
     article {
         height: fit-content;
     }
