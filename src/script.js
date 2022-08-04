@@ -175,11 +175,11 @@ function afterQ() {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //nav popup
 
-const Nav = document.getElementById("Nav");
+const nav = document.getElementById("Nav");
 
    
-Nav.addEventListener("mouseover", up)
-Nav.addEventListener("mouseout", down)
+nav.addEventListener("mouseover", up)
+nav.addEventListener("mouseout", down)
 
 
 function up () {
@@ -220,3 +220,4 @@ setTimeout(function navBackDown() {
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
