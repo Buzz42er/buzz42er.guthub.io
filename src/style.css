@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 /*font-family: 'Comfortaa', cursive;*/
-@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap");
 /*
 font-family: 'UnifrakturMaguntia', cursive;
 */
@@ -8,7 +8,7 @@ font-family: 'UnifrakturMaguntia', cursive;
 /*
 font-family: "ProximaNW01-Reg";
 */
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=UnifrakturMaguntia&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=UnifrakturMaguntia&display=swap");
 /*
 font-family: 'Exo', sans-serif;
 font-family: 'UnifrakturMaguntia', cursive;
@@ -48,482 +48,463 @@ font-family: 'UnifrakturMaguntia', cursive;
     }
   } */
 
-  #mobileNone2, .mobileNone1  {
-    display: none;
-  }
+#mobileNone2,
+.mobileNone1 {
+  display: none;
+}
 
 /*end of privremeno*/
 
 body {
-    font-family: 'Comfortaa', cursive;
-    background-color: #161616;
-    color: white;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+  font-family: "Comfortaa", cursive;
+  background-color: #161616;
+  color: white;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 
-    position: relative;
-    
-    padding: 0 0 15% 0;
-    margin: 0;
+  position: relative;
 
-    background-image: url("/photos/aastr-moon-shat.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    box-shadow: inset 0 -5px 10px -4px rgba(0, 0, 0, 0.856);
+  padding: 0 0 15% 0;
+  margin: 0;
 
-    color: rgb(255, 255, 255);
-    font-family: 'UnifrakturMaguntia', cursive;
-    font-size: 5em;
-    font-weight: bolder;
-    text-shadow: 1px 1px 1em rgb(0, 0, 0), -1px -1px 1em black;
-    /*blur all ower*/
-    width: 100%;
+  background-image: url("/photos/aastr-moon-shat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  box-shadow: inset 0 -5px 10px -4px rgba(0, 0, 0, 0.856);
 
+  color: rgb(255, 255, 255);
+  font-family: "UnifrakturMaguntia", cursive;
+  font-size: 5em;
+  font-weight: bolder;
+  text-shadow: 1px 1px 1em rgb(0, 0, 0), -1px -1px 1em black;
+  /*blur all ower*/
+  width: 100%;
 }
 
 header h1 {
-    display: flex;
-    justify-content: center;
-    padding: 5% 0 5% 0 ;
+  display: flex;
+  justify-content: center;
+  padding: 5% 0 5% 0;
 }
 
 #menuButton {
-    display: flex;
-    justify-self: flex-start;
-    margin: 30px;
-    padding: 0;
-    width: 75px;
-    height: 75px;
+  display: flex;
+  justify-self: flex-start;
+  margin: 30px;
+  padding: 0;
+  width: 75px;
+  height: 75px;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .menuIcon {
-    display: flex;
-    justify-self: flex-start;
-    cursor: pointer;
-
+  display: flex;
+  justify-self: flex-start;
+  cursor: pointer;
 }
 
 h5 {
-    color: rgb(0, 168, 190);
+  color: rgb(0, 168, 190);
 }
 
 /*standardni sadržaj - atributi koje će imati svaki testovni sadržaj ** start */
 .container {
-    /*prostor za sadržaj - sadrži section element*/
-    background-color: transparent;
-    width: 100%;
-    height: 700px;
+  /*prostor za sadržaj - sadrži section element*/
+  background-color: transparent;
+  width: 100%;
+  height: 700px;
 
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
+  /*podnaslovi*/
+  height: 187px;
+  width: 20px;
+  text-transform: capitalize;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 67px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 
-    /*podnaslovi*/
-    height: 187px;
-    width: 20px;
-    text-transform: capitalize;
-    font-family: 'Comfortaa';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2em;
-    line-height: 67px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    
+  color: #ffffff;
 
-    color: #FFFFFF;
-
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.nasloviMOB , .desknav {
-    display: none;
+.nasloviMOB,
+.desknav {
+  display: none;
 }
 
 section {
-    /*sadrži article element i naslove*/
-    background-color: rgb(49, 49, 49);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  /*sadrži article element i naslove*/
+  background-color: rgb(49, 49, 49);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 
-
-    width: 1250px;
-    height: 700px;
+  width: 1250px;
+  height: 700px;
 }
 
-article{
-    /*article sadrži tekstualni sadržaj*/
-    /*background-color: #292929;*/
-    background-color: transparent;
-    border: 3px dashed rgb(20, 20, 20);
-    border-radius: 10px;
-    width: 400px;
-    height: 450px;
-    margin: 15px;
+article {
+  /*article sadrži tekstualni sadržaj*/
+  /*background-color: #292929;*/
+  background-color: transparent;
+  border: 3px dashed rgb(20, 20, 20);
+  border-radius: 10px;
+  width: 400px;
+  height: 450px;
+  margin: 15px;
 }
 
 .aboutLinks {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .aboutLinks:hover {
-    fill: rgb(0, 225, 255);
-    color: rgb(0, 225, 255);
-
+  fill: rgb(0, 225, 255);
+  color: rgb(0, 225, 255);
 }
 
 .subProject h3 {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
-.subArticle h3, .subProject h3 {
-    display: flex;
-    justify-content: center;
-    font-size: 2em;
+.subArticle h3,
+.subProject h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
 }
 
 /*link za h3 unutar*/
 h3 a {
-    color: white;
-    text-decoration: none;
-    
+  color: white;
+  text-decoration: none;
 }
 
 h3 a:before {
-    color: white;  
+  color: white;
 }
 
 h3 a:hover {
-    color: rgb(0, 225, 255);  
+  color: rgb(0, 225, 255);
 }
 
 h3 a:active {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 h3 a:after {
-    color: white;
+  color: white;
 }
 
-#projekti, #projects {
-    height: 800px;
+#projekti,
+#projects {
+  height: 800px;
 }
 
 #project {
-    height: 650px;
+  height: 650px;
 }
 
 #project p {
-    margin-top: 5px;
-    margin-left: 60px;
+  margin-top: 5px;
+  margin-left: 60px;
 }
 
 .imgSlidersDiv {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .dimensionsImg {
-    width: 280px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
+  width: 280px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
 }
 
 .projectImg {
-    border-radius: 1px;
-    box-shadow: 0 0 10px 5px rgba(29, 29, 29, 0.685);
-    margin-top: 0;
+  border-radius: 1px;
+  box-shadow: 0 0 10px 5px rgba(29, 29, 29, 0.685);
+  margin-top: 0;
 }
 
 button {
-    background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    width: 40px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 40px;
 }
 
-button:hover{
-    transform: scale(1.25);
+button:hover {
+  transform: scale(1.25);
 }
 
 button:active {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
-
 
 .heightVar {
-    height: fit-content;
+  height: fit-content;
 }
 
-address {  
-    background-color: transparent;
-    width: 400px;
-    height: 450px;
-    margin: 30px;
-
+address {
+  background-color: transparent;
+  width: 400px;
+  height: 450px;
+  margin: 30px;
 }
 
 /*standardni sadržaj ** end */
 
 .razdjelnik {
-    /*dekorativni div*/
-    height: 55px;
-    background-color: #0c0c0c;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.842);
+  /*dekorativni div*/
+  height: 55px;
+  background-color: #0c0c0c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.842);
 }
 
 .pozadinskaSlika {
-    /*dekorativni div, pozadinska slika, fixed effect --> izgleda kao da se scroll-a u suprotnome smjeru*/
-    background-image: url("/photos/astronautonthemoon.jpg");
-    background-size: cover;
+  /*dekorativni div, pozadinska slika, fixed effect --> izgleda kao da se scroll-a u suprotnome smjeru*/
+  background-image: url("/photos/astronautonthemoon.jpg");
+  background-size: cover;
 
-    height: 250px;
-    box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.801);
-    background-attachment: fixed;
+  height: 250px;
+  box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.801);
+  background-attachment: fixed;
 }
 
 #o-meni {
-    background-color: #0c0c0c;
-
+  background-color: #0c0c0c;
 }
 
 #o-meni section {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 #o-meni section article {
-    background-color: transparent;
-    border: 0;
-
+  background-color: transparent;
+  border: 0;
 }
 
 .img {
-    background-image: url("/slikeTehnologije/Omeni.png");
-    width: 65%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("/slikeTehnologije/Omeni.png");
+  width: 65%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 
-    display: block;
+  display: block;
 }
 
 /*Links*/
 a {
-    color: rgb(0, 168, 190);
+  color: rgb(0, 168, 190);
 }
 
 a:hover {
-    color: rgb(0, 225, 255);
+  color: rgb(0, 225, 255);
 }
 
 a:active {
-    color: white;
+  color: white;
 }
 
 .mob-o-meni {
-    display: none;
+  display: none;
 }
 
 .mob-o-meni h3 {
-    margin-bottom: 5px;
-    
+  margin-bottom: 5px;
 }
 
 .mob-o-meni ul {
-    margin-top: 0;
-    
+  margin-top: 0;
 }
-
 
 /*link za li unutar mob-o-meni*/
 
-
 .mob-o-meni li a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .mob-o-meni li a:active {
-    text-decoration: none;
-    font-size: 1.2em;
+  text-decoration: none;
+  font-size: 1.2em;
 }
 
 .clanak {
-    display: block;
-    height: 225px;
-    
+  display: block;
+  height: 225px;
 }
 
-.kontakt-form , .kontakt-link {
-    display: flex;
-    justify-content: center;
+.kontakt-form,
+.kontakt-link {
+  display: flex;
+  justify-content: center;
+  /* remove when form is working */
+  align-items: center;
 }
 
 .kontakt-link {
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.2em;   
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2em;
 }
 
 .kontakt-link h3 {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .kontakt-link ul {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-form input, textarea {
-    border-radius: 5px;
-    background-color: #0c0c0c;
-    color: #FFFFFF;
-    border: 0;
-    font-family: 'Comfortaa', cursive;
-    height: 30px;
-    width: 300px;
+form input,
+textarea {
+  border-radius: 5px;
+  background-color: #0c0c0c;
+  color: #ffffff;
+  border: 0;
+  font-family: "Comfortaa", cursive;
+  height: 30px;
+  width: 300px;
 }
 
 form textarea {
-    height: 120px;
-    
+  height: 120px;
 }
 
 form input[type="submit"] {
-    background-color: rgb(0, 168, 190);
-    height: 40px;
-    
-    cursor: pointer;
-    font-size: 17px;
+  background-color: rgb(0, 168, 190);
+  height: 40px;
 
-    box-shadow: 0 0 10px -2px #0c0c0c;
+  cursor: pointer;
+  font-size: 17px;
+
+  box-shadow: 0 0 10px -2px #0c0c0c;
 }
 
 form input[type="submit"]:hover {
-    transform: scale(1.1);
-    background-color: rgb(0, 225, 255);
-    
+  transform: scale(1.1);
+  background-color: rgb(0, 225, 255);
 }
 
-
 form input[type="submit"]:active {
-    transform: scale(0.9);
-    background-color: #FFFFFF;
-    color: #5f5f5f;
+  transform: scale(0.9);
+  background-color: #ffffff;
+  color: #5f5f5f;
 }
 
 footer {
-    display: flex;
+  display: flex;
 
-    justify-content: space-evenly;
-    align-items: center;
+  justify-content: space-evenly;
+  align-items: center;
 
-    padding: 20px 0;
+  padding: 20px 0;
 
-    color: #313131;
-    background-color: #0c0c0c;
-    box-shadow: inset 10px 10px 7px -5px rgba(0, 0, 0, 0.664);
-    width: 100%;
-
+  color: #313131;
+  background-color: #0c0c0c;
+  box-shadow: inset 10px 10px 7px -5px rgba(0, 0, 0, 0.664);
+  width: 100%;
 }
 
 footer article,
 address {
-    border: none;
-    width: auto;
-    height: auto;
+  border: none;
+  width: auto;
+  height: auto;
 }
 
 footer a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 footer a:hover {
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.801);
-    padding: 5px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.801);
+  padding: 5px;
 }
 
 footer li {
-    list-style-type: none;
-    margin: 5px 15px;
+  list-style-type: none;
+  margin: 5px 15px;
 }
 
 footer span {
-    margin: 40px 0px;
+  margin: 40px 0px;
 }
 
-@media screen and (max-width: 1250px){
-    
-    nav li {
-        
-        padding: 0 20px;
-    }
+@media screen and (max-width: 1250px) {
+  nav li {
+    padding: 0 20px;
+  }
 
-    .img {
-        display: none;
-    }
-    .mob-o-meni {
-        display: initial;
-        display: flex;
-        width: 80%;
-        height: auto;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        
-    }
+  .img {
+    display: none;
+  }
+  .mob-o-meni {
+    display: initial;
+    display: flex;
+    width: 80%;
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 
-    #o-meni {
-        height: auto;
-    }
+  #o-meni {
+    height: auto;
+  }
 
-    #o-meni article {
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: space-evenly;
-    }
-
+  #o-meni article {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+  }
 }
 
+@media screen and (max-width: 280px) {
+  nav {
+    height: 135px;
+  }
 
-@media screen and (max-width: 280px){
-    nav {
-       height: 135px;       
-    }
-
-    .navi {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+  .navi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
